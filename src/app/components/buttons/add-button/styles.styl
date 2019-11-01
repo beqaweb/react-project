@@ -1,0 +1,56 @@
+@keyframes fade-in-add-btn {
+  0% {
+    width 0
+    height 0
+    opacity 0
+    transform translateX((100 / 16)rem)
+  }
+  100% {
+    width (60 / 16)rem
+    height (60 / 16)rem
+    opacity 1
+    transform translateX(0)
+  }
+}
+@keyframes fade-out-add-btn {
+  0% {
+    width (60 / 16)rem
+    height (60 / 16)rem
+    opacity 1
+    transform translateX(0)
+  }
+  100% {
+    width 0
+    height 0
+    opacity 0
+    transform translateX((100 / 16)rem)
+  }
+}
+
+.add-button__fade {
+  width 0
+  height 0
+  opacity 0
+  animation-name fade-out-add-btn !important
+  animation-duration .4s !important
+}
+
+.add-button {
+  font-family 'Roboto'
+  font-size (21 /16)rem
+  width (60 / 16)rem
+  height (60 / 16)rem
+  display flex
+  align-items center
+  justify-content center
+  border none
+  background-color #d23f31
+  border-radius 50%
+  color #ffffff
+  transition .3s
+  animation-name fade-in-add-btn
+  animation-duration .4s
+  &:active {
+    transform scale(0.9)
+  }
+}

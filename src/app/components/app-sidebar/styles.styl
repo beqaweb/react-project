@@ -1,0 +1,29 @@
+@import "../../../styl/functions/px-to-rem.styl"
+
+.nav-link {
+  transition .3s
+  border-left 5px solid #ffffff
+}
+.nav-link:hover , .nav-link.active {
+  background-color #eeeeee
+  border-left 5px solid #666666
+}
+
+.app-sidebar {
+  position relative
+  z-index 1
+  max-width px(200)
+  min-width px(200)
+  box-shadow px(1) 0 px(1) 0 rgba(0, 0, 0, 0.12)
+}
+
+.wrap-logo {
+  overflow hidden
+  max-width px(130)
+  margin 0 auto
+  padding px(10) 0
+}
+
+.wrap-logo__img {
+  width 100%
+}

@@ -1,0 +1,136 @@
+
+.expansion-panel {
+  font-family: 'Roboto', sans-serif
+  transition .3s
+  border (1 / 16)rem solid #cfcfcf
+  background-color #ffffff
+  border-bottom none
+  box-shadow 0 0.1875rem 0.375rem 0 #b8b8b8
+  overflow hidden
+}
+
+.expansion-panel.opened {
+  border-bottom (1 / 16)rem solid #cfcfcf
+  margin-left -(25 / 16)rem
+  margin-right -(25 / 16)rem
+}
+
+.expansion-panel * {
+  margin 0
+}
+
+.expansion-panel__header {
+  padding (12 / 16)rem (20 / 16)rem
+  border-bottom (1 / 16)rem solid #cfcfcf
+  white-space nowrap
+  max-height (42 / 16)rem
+  box-sizing border-box
+  cursor pointer
+  transition .3s
+  font-size (14 /16)rem
+  display flex
+  align-items center
+}
+
+.not-read {
+  .expansion-panel__header {
+    font-weight bold
+  }
+}
+
+.expansion-panel__header:hover .expansion-panel__buttons  {
+  transition .3s
+  max-width (79 / 16)rem
+  opacity 1
+}
+
+.overfflow-ellipsis {
+  overflow hidden
+  text-overflow ellipsis
+}
+
+.expansion-panel__topic {
+  transition max-width .3s
+  max-width 25.5%
+  min-width 25.5%
+}
+
+.opened .expansion-panel__topic {
+  max-width 100%
+  width 100%
+}
+
+.expansion-panel__last-message {
+  transition .3s
+  flex-grow 1
+  margin-left (33 / 16)rem
+}
+
+.opened .expansion-panel__last-message {
+  width 0
+  opacity 0
+  margin-left 0
+}
+
+.expansion-panel__buttons {
+  transition .3s
+  max-width 0
+  opacity 0
+}
+
+.opened .expansion-panel__buttons {
+  transition .3s
+  max-width (79 / 16)rem
+  opacity 1
+  visibility visible
+}
+
+.expansion-panel__button {
+  transition .3s
+  border none
+  background none
+  color #666666
+}
+
+.expansion-panel__button:hover {
+  transform scale(1.07)
+}
+
+.expansion-panel__expanded-content {
+  transition max-height .3s
+  max-height 0
+}
+
+.opened .expansion-panel__expanded-content {
+  max-height 100vh
+  transition max-height 1s
+}
+
+.expansion-panel__mail-header {
+  display flex
+  flex-direction column
+  border-bottom (1 / 16)rem solid #cfcfcf
+}
+
+.expansion-panel__info-line {
+  padding (13 /16)rem (27 / 16)rem
+}
+
+
+.expansion-panel__info-type {
+  color #666666
+  font-size: (13 / 16)rem
+  min-width (65 / 16)rem
+  display inline-block
+}
+
+.expansion-panel__info-email {
+  color #333333
+  font-size: (13 / 16)rem
+}
+
+.expansion-panel__expanded-message {
+  padding (13 /16)rem (27 / 16)rem
+  color #333333
+  font-size: (14 / 16)rem
+}

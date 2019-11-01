@@ -1,0 +1,48 @@
+.modal-btn {
+  transition .2s
+  font-family: 'Roboto', sans-serif
+  border (1 / 16)rem solid #009688
+  font-weight 500
+  background none
+  min-width (90/ 16)rem
+  font-size (14 / 16)rem
+  text-transform uppercase
+  border-radius (2 /16)rem
+  padding (8.5 / 16)rem  (19 / 16)rem
+  display flex
+  justify-content center
+  align-items center
+  &:disabled {
+    background-color #d3d3d3
+    color: #989da1
+    border none
+    &:hover {
+      background-color #d3d3d3
+      color: #989da1
+      border none
+    }
+  }
+}
+
+.modal-btn__primary {
+  color #009688
+  &:hover {
+    color #ffffff
+    background-color #009688
+  }
+  &:active {
+    transform scale(0.9)
+  }
+}
+
+.modal-btn__secondary {
+  color #ffffff
+  background-color #009688
+  &:hover {
+    color #009688
+    background none
+  }
+  &:active {
+    transform scale(0.9)
+  }
+}

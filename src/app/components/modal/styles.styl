@@ -1,0 +1,91 @@
+@keyframes modal-fade-in {
+  0% {
+    opacity 0
+  }
+  100% {
+    opacity 1
+  }
+}
+
+@keyframes modal-body-fade-in {
+  0% {
+    opacity 0
+    transform translateX(50%)
+  }
+  100% {
+    opacity 1
+    transform translateX(0)
+  }
+}
+
+.modal {
+  font-family: 'Roboto', sans-serif
+  display flex
+  position absolute
+  z-index 10
+  top 0
+  left 0
+  width 100%
+  height 100vh
+  background-color rgba(0, 0, 0, 0.51)
+  animation-name modal-fade-in
+  animation-duration .5s
+}
+
+.modal__add-button {
+  position absolute
+  right (20 / 16)rem
+  bottom (20 / 16)rem
+}
+
+.modal__body {
+  margin auto
+  background-color #ffffff
+  max-width (912 / 16)rem
+  width 100%
+  animation-name modal-body-fade-in
+  animation-duration .5s
+  border-radius (5 / 16)rem
+  overflow hidden
+  box-shadow: (10 / 16)rem (10 / 16)rem (6 / 16)rem 0 #6d6d6d
+}
+
+.modal__header {
+  background-color #444444
+  display flex
+  justify-content space-between
+  align-items center
+  padding (8 / 16)rem (30 / 16)rem
+  font-size (14/ 16)rem
+  color #ffffff
+}
+
+.modal__close-icon {
+  cursor pointer
+}
+.modal__content-mails {
+  display flex
+  flex-direction column
+  border-bottom 1px solid #707070
+}
+.modal__content-mails-label {
+  padding (13 / 16)rem (27 / 16)rem
+  display flex
+}
+
+.modal__mail-type {
+  color #666666
+  font-size: (13 / 16)rem
+  min-width (65 / 16)rem
+  display inline-block
+}
+
+.modal_subject-input {
+  padding (13 / 16)rem (27 / 16)rem
+  color #454545
+}
+.modal__buttons {
+  padding (15/ 16)rem (20/ 16)rem
+  display flex
+  justify-content flex-end
+}
